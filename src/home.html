@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+    </head>
+    <body>
+    <script src="/socket.io/socket.io.js"></script>
+    <script>
+        //const io = require('socket.io-client')
+        const socket = io('http://localhost:8080')
+        socket.on('connect', function(){
+            socket.emit('ola')
+        })
+    </script>
+</body>
+</html>
